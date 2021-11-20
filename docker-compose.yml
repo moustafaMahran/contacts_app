@@ -4,10 +4,8 @@ services:
         image: mysql:5.7
         restart: always
         environment:
-            MYSQL_ROOT_PASSWORD: password
+            MYSQL_ROOT_PASSWORD: root
             MYSQL_DATABASE: task_db
-            MYSQL_USER: user
-            MYSQL_PASSWORD: password
         ports:
             - "3307:3306"
     backend:
@@ -16,22 +14,24 @@ services:
         volumes: 
             - "./backend:/app"
         ports: 
-            - "3001:3000"
+            - "3000:3000"
         depends_on:
             - db
         links:
             - db
         environment:
-          DB_USER: root
-          DB_NAME: task_db
-          DB_PASSWORD: password
-          DB_HOST: db
+          MYSQL_USER: root
+          MYSQL_DATABASE: task_db
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DB_HOST: db
     frontend:
         build: frontend
-        command: ionic serve
+        command: ionic serve -p 8100 -b '0.0.0.0'
         volumes: 
             - "./frontend:/app"
         ports: 
-            - "8001:8000"
+            - "8100:8100"
         depends_on:
             - backend
+        environment:
+          BE_URL: http://localhost:3000
