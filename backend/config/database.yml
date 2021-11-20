@@ -5,7 +5,7 @@ default: &default
   database: task_db
   username: root
   password: root
-  host: db
+  host: <%= ENV['MYSQL_DB_HOST'] || 'localhost' %>
 
 development:
   <<: *default
