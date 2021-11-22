@@ -1,0 +1,22 @@
+.modalGrid {
+  width: 90%;
+}
+
+.modalTitle {
+  position: relative;
+  margin-top: 20%;
+}
+
+.modalSubTitle {
+  margin-top: 10%;
+  --background: grey;
+}
+
+.modalInput {
+  --background: transparent;
+  width: 100%;
+}
+
+.modalText {
+  white-space: initial;
+}
