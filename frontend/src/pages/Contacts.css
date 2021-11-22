@@ -1,0 +1,22 @@
+.marginRight {
+  margin-right: 2%;
+}
+
+.marginBottom {
+  margin-bottom: 2%;
+}
+
+.nameLabel {
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.centered {
+  text-align: center;
+}
+
+.paginationButton {
+  margin-right: 2%;
+  margin-left: 2%;
+}
