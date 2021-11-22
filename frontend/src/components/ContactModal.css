@@ -1,0 +1,23 @@
+
+.modalGrid {
+  width: 90%;
+}
+
+.modalTitle {
+  position: relative;
+  margin-top: 20%;
+}
+
+.modalInput {
+  --background: transparent;
+  width: 100%;
+}
+
+.modalButton {
+  margin-top: 10%;
+}
+
+.marginTopBottom {
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
