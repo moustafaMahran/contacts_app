@@ -1,11 +1,11 @@
 default: &default
   adapter: mysql2
-  encoding: utf8
+  encoding: utf8mb4
   pool: 5
   database: task_db
   username: root
   password: root
-  host: <%= ENV['MYSQL_DB_HOST'] || 'localhost' %>
+  host: <%= ENV["MYSQL_DB_HOST"] || "localhost" %>
 
 development:
   <<: *default

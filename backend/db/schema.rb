@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 20211118220401) do
 
-  create_table "audits", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "audits", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.integer  "auditable_id"
     t.string   "auditable_type"
     t.integer  "associated_id"
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20211118220401) do
     t.index ["user_id", "user_type"], name: "user_index", using: :btree
   end
 
-  create_table "contacts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+  create_table "contacts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string   "first_name",   null: false
     t.string   "last_name",    null: false
     t.string   "email",        null: false

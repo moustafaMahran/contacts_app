@@ -3,6 +3,8 @@ services:
     db:
         image: mysql:5.7
         restart: always
+        volumes:
+            - mysql-data:/var/lib/mysql
         environment:
             MYSQL_ROOT_PASSWORD: root
             MYSQL_DATABASE: task_db
@@ -35,3 +37,5 @@ services:
             - backend
         environment:
           BE_URL: http://localhost:3000
+volumes:
+    mysql-data:
