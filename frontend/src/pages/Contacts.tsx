@@ -33,7 +33,7 @@ import { useEffect, useState } from "react";
 import ContactModal from "../components/ContactModal";
 import EditHistoryModal from "../components/EditsHistoryModal";
 import { deleteContact, getContacts } from "../shared/api";
-import { SkeletonComponent } from "../shared/skeleton";
+import { SkeletonComponent } from "../components/skeleton";
 import { Contact } from "../shared/type";
 import "./Contacts.css";
 
