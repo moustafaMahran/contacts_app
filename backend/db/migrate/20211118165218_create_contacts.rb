@@ -12,9 +12,8 @@ class CreateContacts < ActiveRecord::Migration[5.0]
       t.timestamps
     end
 
-    add_index :contacts, [:first_name, :last_name], :name => 'index_contacts_on_names'
-    add_index :contacts, :email, :name => 'index_contacts_on_email'
-    add_index :contacts, :phone_number, :name => 'index_contacts_on_phone_number'
-
+    add_index :contacts, %i(first_name last_name), name: 'index_contacts_on_names'
+    add_index :contacts, :email, name: 'index_contacts_on_email'
+    add_index :contacts, :phone_number, name: 'index_contacts_on_phone_number'
   end
 end

@@ -405,6 +405,9 @@ Style/Copyright:
   Notice: '^Copyright (\(c\) )?2[0-9]{3} .+'
   AutocorrectNotice: ""
 
+Documentation:
+  Enabled: false
+
 Style/DocumentationMethod:
   RequireForNonPublicMethods: false
 

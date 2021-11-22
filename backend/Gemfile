@@ -24,10 +24,10 @@ gem 'puma', '~> 3.0'
 # gem 'capistrano-rails', group: :development
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
+gem 'active_model_serializers'
+gem 'audited', '~> 5.0'
 gem 'rack-cors'
 gem 'rubocop-rails', require: false
-gem "audited", "~> 5.0"
-gem 'active_model_serializers'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::API
-
   private
-  
+
   def pagination_params(params)
     default_page_size = 10
     default_page_number = 1
