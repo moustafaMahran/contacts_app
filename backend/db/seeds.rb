@@ -7,8 +7,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-contacts_list = [
-  {
-    first_name: ''
-  },
-]
+file = File.read('db/contacts.json')
+data = JSON.parse(file)
+Contact.create(data)

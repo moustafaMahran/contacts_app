@@ -1,0 +1,15 @@
+[
+  {"first_name": "Mo", "last_name": "Salah", "phone_number": "+201091764847", "email": "mo.salah@liverpool.com"},
+  {"first_name": "Sherlock", "last_name": "Holmes", "phone_number": "+201081982647", "email": "sherlock@pecker.com"},
+  {"first_name": "Cristiano", "last_name": "Ronaldo", "phone_number": "+201092981738", "email": "cr7@manunited.com"},
+  {"first_name": "Lionel", "last_name": "Messi", "phone_number": "+201091873947", "email": "leo.messi@psg.com"},
+  {"first_name": "walter", "last_name": "white", "phone_number": "+201081982647", "email": "walter@danger.com"},
+  {"first_name": "Neymar", "last_name": "Junior", "phone_number": "+201061765373", "email": "neymar@psg.com"},
+  {"first_name": "pablo", "last_name": "escobar", "phone_number": "+201081983746", "email": "pablo@prison.com"},
+  {"first_name": "Luca", "last_name": "Modric", "phone_number": "+201061657384", "email": "luca@madrid.com"},
+  {"first_name": "Girard", "last_name": "Pique", "phone_number": "+201071763737", "email": "pique@barcelona.com"},
+  {"first_name": "Edward", "last_name": "Casillas", "phone_number": "+201063867432", "email": "casillas@gk.com"},
+  {"first_name": "Raul", "last_name": "Gonzalis", "phone_number": "+201091063647", "email": "raul@madrid.com"},
+  {"first_name": "Louis", "last_name": "Figo", "phone_number": "+201021849853", "email": "figo@madrid.com"},
+  {"first_name": "David", "last_name": "Beckham", "phone_number": "+201092947645", "email": "david@beckham.com"}
+]
