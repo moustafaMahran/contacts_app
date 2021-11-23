@@ -13,4 +13,3 @@ Frontend is running in port 8100.
 
 TROUBLESHOOT
 1. Error: A server is already running. Check /app/tmp/pids/server.pid ---> Remove backend/tmp/pids/server.pid and run again
-2. [ERROR] react-scripts is required for this command to work properly ---> run: docker-compose run frontend npm i
