@@ -7,7 +7,7 @@ services:
             - mysql-data:/var/lib/mysql
         environment:
             MYSQL_ROOT_PASSWORD: root
-            MYSQL_DATABASE: task_db
+            MYSQL_DATABASE: taskdb
         ports:
             - "3307:3306"
     backend:
@@ -24,7 +24,7 @@ services:
             - db
         environment:
           MYSQL_USER: root
-          MYSQL_DATABASE: task_db
+          MYSQL_DATABASE: taskdb
           MYSQL_ROOT_PASSWORD: root
           MYSQL_DB_HOST: db
     frontend:
