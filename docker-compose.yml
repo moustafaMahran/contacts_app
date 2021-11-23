@@ -30,6 +30,7 @@ services:
     frontend:
         build: frontend
         image: moustafamahran184/contacts_app_frontend:latest
+        stdin_open: true
         command: ionic serve -p 8100 -b '0.0.0.0'
         volumes: 
             - "./frontend:/app"
