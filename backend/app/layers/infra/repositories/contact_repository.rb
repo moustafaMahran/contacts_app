@@ -6,7 +6,7 @@ module Infra
       end
 
       def save(contact)
-        contact.save
+        contact.save!
       end
 
       def delete(contact)

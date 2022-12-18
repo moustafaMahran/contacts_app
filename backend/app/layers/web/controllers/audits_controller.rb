@@ -16,10 +16,6 @@ module Web
       def permitted_params
         params.permit(:auditable_type, :id)
       end
-
-      def render_missing_params
-        render json: { error: 'missing required params' }, status: :bad_request
-      end
     end
   end
 end

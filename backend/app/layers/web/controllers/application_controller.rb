@@ -3,6 +3,11 @@
 module Web
   module Controllers
     class ApplicationController < ActionController::API
+      rescue_from Exception do |e|
+        Rails.logger.error("Exception message: #{e.message}")
+        render json: { error: e.message }, status: :internal_server_error
+      end
+
       private
 
       def pagination_params(params)
