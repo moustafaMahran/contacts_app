@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe ContactsController, type: :controller do
+RSpec.describe Web::Controllers::ContactsController, type: :controller do
 
 
   # index action
