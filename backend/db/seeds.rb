@@ -9,4 +9,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 file = File.read('db/contacts.json')
 data = JSON.parse(file)
-Contact.create(data)
+Domain::Contact::Contact.create(data)

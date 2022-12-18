@@ -18,5 +18,5 @@ export const deleteContact = (contact_id: number) => {
 }
 
 export const contactEditHistory = (contact_id: number) => {
-  return api.get("/contacts/" + contact_id + "/show_edit_history/")
+  return api.get("/audits/" + contact_id + "?auditable_type=Contact")
 }

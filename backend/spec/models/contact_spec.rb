@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe Contact, type: :model do
+RSpec.describe Domain::Contact::Contact, type: :model do
 
   let(:params) { {} }
 
@@ -8,7 +8,7 @@ RSpec.describe Contact, type: :model do
     context 'when all attributes exist' do
       before do
         params = {first_name: 'patrick', last_name: 'jane', phone_number: '+201091765367', email: 'jane@test.com'}
-        @contact = Contact.create(params)
+        @contact = Domain::Contact::Contact.create(params)
       end
       it 'should be valid' do
         expect(@contact).to be_valid
@@ -18,7 +18,7 @@ RSpec.describe Contact, type: :model do
     context 'when first_name is missing' do
       before do
         params = {last_name: 'jane', phone_number: '+201091765367', email: 'jane@test.com'}
-        @contact = Contact.create(params)      
+        @contact = Domain::Contact::Contact.create(params)      
       end
       it 'should be invalid' do
         expect(@contact.valid?).to eq(false) 
@@ -28,7 +28,7 @@ RSpec.describe Contact, type: :model do
     context 'when last_name is missing' do
       before do
         params = {first_name: 'jane', phone_number: '+201091765367', email: 'jane@test.com'}
-        @contact = Contact.create(params)      
+        @contact = Domain::Contact::Contact.create(params)      
       end
       it 'should be invalid' do
         expect(@contact.valid?).to eq(false) 
@@ -38,7 +38,7 @@ RSpec.describe Contact, type: :model do
     context 'when phone_number is missing' do
       before do
         params = {first_name: 'patrick', last_name: 'jane', email: 'jane@test.com'}
-        @contact = Contact.create(params)      
+        @contact = Domain::Contact::Contact.create(params)      
       end
       it 'should be invalid' do
         expect(@contact.valid?).to eq(false) 
@@ -48,7 +48,7 @@ RSpec.describe Contact, type: :model do
     context 'when email is missing' do
       before do
         params = {first_name: 'patrick', last_name: 'jane', phone_number: '+201091765367'}
-        @contact = Contact.create(params)      
+        @contact = Domain::Contact::Contact.create(params)      
       end
       it 'should be invalid' do
         expect(@contact.valid?).to eq(false) 
@@ -59,8 +59,8 @@ RSpec.describe Contact, type: :model do
       before do
         params1 = {first_name: 'patrick', last_name: 'jane', phone_number: '+201091765367', email: 'jane@test.com'}
         params2 = {first_name: 'patrick', last_name: 'jane', phone_number: '+201091765367', email: 'jane@test.com'}
-        @contact1 = Contact.create(params1)      
-        @contact2 = Contact.create(params2)      
+        @contact1 = Domain::Contact::Contact.create(params1)      
+        @contact2 = Domain::Contact::Contact.create(params2)      
       end
       it 'should be invalid' do
         expect(@contact1.valid?).to eq(true)
