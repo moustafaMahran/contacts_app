@@ -24,12 +24,6 @@ module Web
         )
         contact = Application::Contact::ContactApplication.new.add_contact(command)
         render json: contact, status: :ok, serializer: Serializers::ContactSerializer
-        # @contact = Contact.new(permitted_params)
-        # if @contact.save
-        #   render json: @contact, status: :ok, serializer: Serializers::ContactSerializer
-        # else
-        #   render json: @contact.errors, status: :bad_request
-        # end
       end
 
       def update
@@ -42,12 +36,6 @@ module Web
         )
         contact = Application::Contact::ContactApplication.new.edit_contact(command)
         render json: contact, status: :ok, serializer: Serializers::ContactSerializer
-        # @contact.update_attributes(permitted_params)
-        # if @contact.errors.empty?
-        #   render json: @contact, status: :ok, serializer: ContactSerializer
-        # else
-        #   render json: @contact.errors, status: :bad_request
-        # end
       end
 
       def destroy
@@ -56,12 +44,6 @@ module Web
         )
         contact = Application::Contact::ContactApplication.new.delete_contact(command)
         render json: contact, status: :ok, serializer: Serializers::ContactSerializer
-        # @contact.destroy
-        # if @contact.errors.empty?
-        #   render json: @contact, status: :ok, serializer: ContactSerializer
-        # else
-        #   render json: @contact.errors, status: :bad_request
-        # end
       end
 
       private
